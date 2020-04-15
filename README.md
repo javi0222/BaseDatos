@@ -4,7 +4,7 @@ _Universidad Autonoma de Santo Domingo, Facultad de Ciencias, Departamento de In
 
 **Analizar y diseñar un Sistema de una determinada empresa tomando en cuenta el siguiente esquema de trabajo:**
 
-## [1. Introducción]()
+## [1. Introducción](./informe/1_introduccion.md)
 
 ## [2. Índice Temático]()
 
@@ -43,7 +43,7 @@ _Universidad Autonoma de Santo Domingo, Facultad de Ciencias, Departamento de In
 ## [11. Crear un Trigger y Stored Procedure que requiera la aplicación:]()
 
         Hacer los Trigger y Stored Procedure para el manejo de las
-        auditorias, para actualizarbalances, para manejar históricoy
+        auditorias, para actualizarbalances, para manejar histórico y
         para manejar las interfaces con otras tablas
 
 ## [12. Crear Prototipo de la aplicación, el cual tiene que ser creado en un lenguaje de programación donde se muestre las siguientes cosas:]()
