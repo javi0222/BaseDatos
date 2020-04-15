@@ -1,0 +1,13 @@
+cedula
+nombre 
+apellido
+cargo
+Salario bruto(total al mes)
+tiempo en la empresa(o dias transcurridos 15)
+sueldo(total por quincena)
+Periodo de liquidación al que corresponde dicha nómina.
+seguro(sfs es de 3,04%)
+Fondo de pensiones(afp es de 2.87%)
+impuesto sobre la renta(isr cuando el empleado gane mas de 34,685)
+Salario neto
+Descuentos 
