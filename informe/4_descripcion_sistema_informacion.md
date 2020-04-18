@@ -2,25 +2,19 @@
 
 ## Descripción del Sistema de Información (SI)
 
-El sistema de informacion que se esta desarrollando es un sisitema de nomina, el cual le permitira a la propietaria del negocio **(reconsiderar usar el nombre del dueño aqui)** llevar la nomina del negocio. nuestro sistema por el momento solo contara con algunas de las funciones esenciales de una nomina, por lo que el registro de entrada y salida de cada empleado debera ser llevado por algun otro sistema y luego esta informacion debera ser alimentada a nuestro sistema para el posterior calculo de la remuneracion a recibir por cada empleado.
+El sistema de informacion que se esta desarrollando es un sisitema de nomina, nuestro sistema por el momento solo contara con algunas de las funciones esenciales de una nomina, por lo que el registro de entrada y salida de cada empleado debera ser llevado por algun otro sistema y luego esta informacion debera ser alimentada a nuestro sistema para el posterior calculo de la remuneracion a recibir por cada empleado.
 
 **Nuestro sistema debe cumplir con los siguientes requerimientos.**
 
-- debe permitir el registro de la fecha de ingreso o contratacion del empeado a la empresa, su salario por hora, su horario de trabajo, el puesto o departamento en el que labora, e informacion basica del empleado como lo son: nombre, cedula, estado civil.
+- Debe permitir el registro de la fecha de ingreso o contratacion del empeado a la empresa, su salario por hora, su horario de trabajo, el puesto o departamento en el que labora, e informacion basica del empleado como lo son: nombre, cedula, estado civil, entre otros.
 
-- debe calcular las horas trabajadas en el dia en base al registro de la hora de llegada y salida del empleado, asi como tambien su sueldo bruto, neto, e impuestos y aportes a la seguridad social, y demas descuentos de ley, ademas de descuentos adicionales debidos inacistancias, horarios incompletos o bien alguna otra causa a especificar por el empelador.
+- Debe calcular las horas trabajadas en el dia en base al registro de la hora de llegada y salida del empleado.
 
-- el sistema tambien debe calcular el sueldo a pagar por concepto de horas extras y la facilidad de especificar el precio o valor a pagar por cada hora extra de trabajo.
+- Calculara tambien el sueldo bruto en base a las horas trabajadas en el periodo de pago, tambien calculara sueldo neto, e impuestos y aportes a la seguridad social, y demas descuentos de ley.
 
-- debe ser capaz de calcular el salario de vacaciones asi como tambien el sueldo numero 13, cumpliendo siempre con lo establezido en la ley para el pago de los mismos asi como tambien para el pago de impuestos y seguro de salud.
+- El sistema tambien debe calcular el sueldo a pagar por concepto de horas extras y la facilidad de especificar el precio o valor a pagar por cada hora extra de trabajo.
 
-- debe permitir la creacion de informes del historial de horas trabajadas en un periodo establecido, asi como el historial de salarios recibidos por cada empleado.
-
-- debe permitir la asignacion de bonificaciones especiales las cuales su valor monetario y descripcion o razon de ser, sera especificado por el propietario del negocio o bien administrador de la nomina.
-
-- el programa debe permitir la creacion de usarios para el manejo del sistema, asi el manejo de la nomina podria ser delegada a un empelado en particular que este capacitado.
-
-- al despedir un empleado y especificar la fecha en la que dicho empleado fue despedido, el programa debera de acuerdo a la razon provista del despido, calcular la remuneracion que debe ser pagada al empleado simpre apegado a lo establesido en la ley.
+- Por ultimo debera mostrar un informe detallado de la remuneracion que debe recibir el empleado.
 
 ## Diagrama de Flujo de Datos (incluye nivel 0 y 1)
 
@@ -36,7 +30,7 @@ El sistema de informacion que se esta desarrollando es un sisitema de nomina, el
 
 <br/>
 
-**Diagrama de Flujo de Datos nivel 1**Diagrama_DFD_nivel_1_v1.png
+**Diagrama de Flujo de Datos nivel 1**
 ![Diagrama de Flujo de Datos nivel 0](./imgs/nivel_1/Diagrama_DFD_nivel_1_v1.png)
 
 <br/>
