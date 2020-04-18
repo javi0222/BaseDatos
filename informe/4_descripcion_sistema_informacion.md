@@ -1,10 +1,10 @@
 # 4. Descripción del Sistema de Información a analizar
 
-## a. Descripción del Sistema de Información (SI)
+## Descripción del Sistema de Información (SI)
 
 El sistema de informacion que se esta desarrollando es un sisitema de nomina, el cual le permitira a la propietaria del negocio **(reconsiderar usar el nombre del dueño aqui)** llevar la nomina del negocio. nuestro sistema por el momento solo contara con algunas de las funciones esenciales de una nomina, por lo que el registro de entrada y salida de cada empleado debera ser llevado por algun otro sistema y luego esta informacion debera ser alimentada a nuestro sistema para el posterior calculo de la remuneracion a recibir por cada empleado.
 
-Nuestro sistema debe cumplir con los siguientes requerimientos.
+**Nuestro sistema debe cumplir con los siguientes requerimientos.**
 
 - debe permitir el registro de la fecha de ingreso o contratacion del empeado a la empresa, su salario por hora, su horario de trabajo, el puesto o departamento en el que labora, e informacion basica del empleado como lo son: nombre, cedula, estado civil.
 
@@ -22,6 +22,24 @@ Nuestro sistema debe cumplir con los siguientes requerimientos.
 
 - al despedir un empleado y especificar la fecha en la que dicho empleado fue despedido, el programa debera de acuerdo a la razon provista del despido, calcular la remuneracion que debe ser pagada al empleado simpre apegado a lo establesido en la ley.
 
-## b. Diagrama de Flujo de Datos (incluye nivel 0 y 1)
+## Diagrama de Flujo de Datos (incluye nivel 0 y 1)
 
-## c. Narrativa de los Procesos mostrados en el Diagrama de Flujo de Datos(DFD)
+**Diagrama de Contexto**
+![Diagrama de contexto](./imgs/diagrama_contexto.png)
+
+<br/>
+
+**Diagrama de Flujo de Datos nivel 0**
+![Diagrama de Flujo de Datos nivel 0](./imgs/Diagrama_DFD_nivel_0_v1.png)
+
+<br/>
+
+**Diagrama de Flujo de Datos nivel 1**
+![Diagrama de Flujo de Datos nivel 1](./imgs/nivel_1/1.png)
+![Diagrama de Flujo de Datos nivel 1](./imgs/nivel_1/2.png)
+![Diagrama de Flujo de Datos nivel 1](./imgs/nivel_1/3.png)
+![Diagrama de Flujo de Datos nivel 1](./imgs/nivel_1/4.png)
+![Diagrama de Flujo de Datos nivel 1](./imgs/nivel_1/5.png)
+![Diagrama de Flujo de Datos nivel 1](./imgs/nivel_1/6.png)
+
+## Narrativa de los Procesos mostrados en el Diagrama de Flujo de Datos(DFD)

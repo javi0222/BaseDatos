@@ -31,7 +31,7 @@ Nos caracterizamos por ser:
 
 ## 3. Organigrama de la empresa
 
-![Organigrama de la empresa](./organigrama.png)
+![Organigrama de la empresa](./imgs/organigrama.png)
 
 En esta empresa al igual que en muchas de las empresas dentro de la categoría **MIPyME**, la gerencia y/o Administración de la misma se lleva a cabo por la dueña de la empresa. El area de caja cuenta con dos personas, y el area de ventas con las otras 4 personas restantes.
 
