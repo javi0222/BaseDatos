@@ -35,11 +35,39 @@ El sistema de informacion que se esta desarrollando es un sisitema de nomina, el
 <br/>
 
 **Diagrama de Flujo de Datos nivel 1**
+![Diagrama de Flujo de Datos nivel 0](./imgs/nivel_1/Diagrama_DFD_nivel_1_v1.png)
+
+<br/>
+
+## Narrativa de los Procesos mostrados en el Diagrama de Flujo de Datos(DFD)
+
+`Proceso 1: Registrar_Informacion_Empleado`
+
 ![Diagrama de Flujo de Datos nivel 1](./imgs/nivel_1/1.png)
+
+Subproceso 1.1: Gregistro_Informacion
+Description: Tienen como tarea capturar toda la informacion del empleado, nombre, identificacion, fecha de ingreso a la compañia, el horario, el puesto a o area en la que desempeñara sus funciones, la cantidad de dinero que cobra por hora normal, y por hora extra, estado civil, direccion, numero de contacto entre otros. Y a la salida almacena dichos datos en el **Archivo maestro de empleado**.
+
+<br/>
+
+`Proceso 2: Registrar_Horas`
+
 ![Diagrama de Flujo de Datos nivel 1](./imgs/nivel_1/2.png)
+
+Subproceso 2.1: Calcular_Horas_Trabajadas
+Descripcion: Este se encarga de calcular las horas trabajadas en el dia, de acuerdo a la hora de entrada y a la hora de salida del empleado, esta informacion luego sera alimentada al subproceso 2.2.
+
+Subproceso 2.2: Registrar_Horas
+Description: Este toma las horas calculadas en el proceso anterior y las almacena en el Archivo de Horas por empleado.
+
+<br/>
+
+`Proceso 3: Calcular_Sueldo_Bruto`
+
 ![Diagrama de Flujo de Datos nivel 1](./imgs/nivel_1/3.png)
+
+Subproceso 3.1: Determinar_horas_extra_y_regulares
+Descripcion: Sealimenta de D1 para obtener el registro de ls
 ![Diagrama de Flujo de Datos nivel 1](./imgs/nivel_1/4.png)
 ![Diagrama de Flujo de Datos nivel 1](./imgs/nivel_1/5.png)
 ![Diagrama de Flujo de Datos nivel 1](./imgs/nivel_1/6.png)
-
-## Narrativa de los Procesos mostrados en el Diagrama de Flujo de Datos(DFD)
