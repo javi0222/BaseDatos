@@ -20,6 +20,14 @@
         <input type="submit" name="login" id="btn" value="Login" />
         <span>Olvido contraseña? <a href="" hef="#">Click aqui</a></span>
       </form>
+      <script type="text/javascript">
+        document.getElementById('btn').addEventListener('click', volver);
+
+        function volver(event) {
+          event.preventDefault();
+          document.location.href = './empleado.html';
+        }
+      </script>
     </div>
   </body>
 </html>

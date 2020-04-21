@@ -6,6 +6,9 @@
     <title>Empleados</title>
   </head>
   <body>
+    <div id="notificacion">
+      Guradado exitosamente
+    </div>
     <div id="contenedor">
       <div id="sidebar">
         <div id="userimg">
@@ -95,8 +98,18 @@
 
         <input type="submit" id="guardar" name="guardar" value="GUARDAR" />
 
-        <input type="submit" name="back" id="back" value="VOLVER ATRAS" />
+        <!-- <input type="submit" name="back" id="back" value="VOLVER ATRAS" /> -->
       </div>
     </div>
+    <script type="text/javascript">
+      document.getElementById('guardar').addEventListener('click', (event) => {
+        const msg = document.getElementById('notificacion');
+        msg.style.display = 'block';
+
+        setTimeout(function () {
+          msg.style.display = 'none';
+        }, 1000);
+      });
+    </script>
   </body>
 </html>
