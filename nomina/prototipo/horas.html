@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./css/horas.css" type="text/css" />
+    <title>Empleados</title>
+  </head>
+  <body>
+    <div id="contenedor">
+      <div id="sidebar">
+        <div id="userimg">
+          <img src="./imagenes/usuario.png" />
+        </div>
+        <div id="menu">
+          <ul>
+            <li class="menu"><a href="./empleado.html">Empelados</a></li>
+            <li class="menu"><a href="./nomina.html">Ver Nomina</a></li>
+            <li class="menu"><a href="#" class="activo">Registrar Horas</a></li>
+            <li class="menu">
+              <a href="./login.html" class="ultimo">Salir</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="registro">
+        <span id="tituloregistro">Registro de Horas</span>
+        <div id="horas">
+          <label>
+            <span>Empelado ID</span>
+            <input type="text" id="txtbuscar" />
+          </label>
+          <label>
+            <span>Entrada</span>
+            <input
+              id="hora"
+              name="hora"
+              type="text"
+              list="listahora"
+              placeholder="Hora"
+            />
+            <datalist id="listahora">
+              <option value="8:00 AM"></option>
+              <option value="9:00 AM"></option>
+              <option value="10:00 AM"></option>
+              <option value="11:00 AM"></option>
+            </datalist>
+            <input
+              id="minutos"
+              name="minutos"
+              type="text"
+              list="listaminutos"
+              placeholder="Minutos"
+            />
+            <datalist id="listaminutos">
+              <option value="10 Minutos"></option>
+              <option value="20 Minutos"></option>
+              <option value="30 Minutos"></option>
+              <option value="40 Minutos"></option>
+            </datalist>
+          </label>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

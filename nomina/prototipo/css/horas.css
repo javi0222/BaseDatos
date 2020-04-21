@@ -1,0 +1,106 @@
+body {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+}
+#contenedor {
+  /* outline: 1px solid red; */
+  width: 937px;
+  margin: 12px auto;
+}
+/* sidebar */
+#sidebar {
+  float: left;
+  width: 212px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+}
+#sidebar a:visited {
+  text-decoration: none;
+}
+#sidebar a:link {
+  text-decoration: none;
+}
+#userimg {
+  text-align: center;
+}
+#sidebar img {
+  margin-top: 39px;
+  margin-bottom: 39px;
+}
+#sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#sidebar li a {
+  padding: 0;
+  padding-left: 60px;
+  margin: 0;
+  margin-top: 1px;
+  display: block;
+  width: 154px;
+  height: 55px;
+  text-align: left;
+  line-height: 55px;
+  background-color: #2d98cd;
+  color: white;
+  font-size: 10pt;
+  font-weight: 400;
+}
+#sidebar .activo {
+  background-color: #0b5a82;
+}
+#sidebar .ultimo {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* final sidebar */
+
+#registro {
+  top: 0;
+  float: right;
+  outline: 1px solid green;
+  width: 685px;
+}
+#tituloregistro {
+  display: block;
+  font-size: 10pt;
+  margin-bottom: 14px;
+}
+#horas {
+  height: 122px;
+  background-color: #f2f2f2;
+  border: solid 1px #d0d0d0;
+  border-radius: 5px;
+}
+
+#txtbuscar {
+  font-size: 10pt;
+  width: 153px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid 1px #bcbcbc;
+  margin-right: 18px;
+  padding-left: 20px;
+}
+label {
+  float: left;
+  font-size: 10pt;
+}
+label span {
+  display: block;
+}
+#hora {
+  width: 60px;
+}
+#minutos {
+  width: 70px;
+  margin-left: 10px;
+}
+#hora,
+#minutos {
+  height: 28px;
+  border: solid 1px #bcbcbc;
+  border-radius: 5px;
+  padding-left: 10px;
+}
