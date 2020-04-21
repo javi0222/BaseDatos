@@ -2,16 +2,17 @@ body {
   font-family: roboto, Arial, Helvetica, sans-serif;
 }
 #contenedor {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   width: 937px;
   margin: 12px auto;
 }
 /* sidebar */
 #sidebar {
   float: left;
-  width: 214px;
+  width: 212px;
   background-color: #f2f2f2;
   border-radius: 5px;
+  border: 1px solid #dbdbdb;
 }
 #sidebar a:visited {
   text-decoration: none;

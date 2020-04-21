@@ -1,20 +1,20 @@
-/* 257x35
-990
-112
-105 */
+body {
+  font-family: roboto, Arial, Helvetica, sans-serif;
+}
 
 #contenedor {
   /* outline: 1px solid red; */
-  width: 1363px;
+  width: 1389px;
   margin: 12px auto;
 }
 
 /* sidebar */
 #sidebar {
   float: left;
-  width: 214px;
+  width: 212px;
   background-color: #f2f2f2;
   border-radius: 5px;
+  border: 1px solid #dbdbdb;
 }
 #sidebar a:visited {
   text-decoration: none;
@@ -137,7 +137,7 @@ tr:nth-child(2) {
   margin-right: 18px;
   padding-left: 20px;
 }
-#btnbuscar {
+#btnconsultar {
   /* padding-top: 15px; */
   box-sizing: content-box;
   height: 35px;
@@ -149,23 +149,41 @@ tr:nth-child(2) {
   font-weight: 500;
   padding: 0;
   margin: 0;
+  margin-left: 30px;
 }
-#registrar {
+#status {
   /* padding-top: 15px; */
   box-sizing: content-box;
-  height: 35px;
-  width: 160px;
+  height: 33px;
+  width: 100px;
   border-radius: 5px;
-  background-color: #2d98cd;
-  color: white;
+  background-color: #ebebeb;
+  color: 464545;
   font-size: 10pt;
   font-weight: 500;
   padding: 0;
   margin: 0;
   float: right;
+  border: 1px solid #b8b8b8;
 }
 input:focus,
 textarea:focus,
 select:focus {
   outline: none;
+}
+
+/* Periodo */
+#periodo {
+  margin-top: 25px;
+  /* outline: 1px solid red; */
+}
+#periodo span {
+  margin: 0;
+  margin-bottom: 8px;
+}
+select {
+  height: 35px;
+}
+#periodo label {
+  margin-left: 290px;
 }

@@ -13,10 +13,16 @@
         </div>
         <div id="menu">
           <ul>
-            <li class="menu"><a href="" class="activo">Empelados</a></li>
-            <li class="menu"><a href="">Ver Nomina</a></li>
-            <li class="menu"><a href="">Registrar Horas</a></li>
-            <li class="menu"><a href="" class="ultimo">Salir</a></li>
+            <li class="menu"><a href="./empleado.html">Empelados</a></li>
+            <li class="menu">
+              <a href="./nomina.html" class="activo">Ver Nomina</a>
+            </li>
+            <li class="menu">
+              <a href="./registroHoras.html">Registrar Horas</a>
+            </li>
+            <li class="menu">
+              <a href="./login.html" class="ultimo">Salir</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -69,6 +75,28 @@
             <td></td>
           </tr>
         </table>
+
+        <div id="periodo">
+          <span>Periodo</span>
+          <div>
+            <select>
+              <option value="">15 / Abril / 2020 - 30 / Abril / 2020</option>
+              <option value="">01 / Abril / 2020 - 15 / Abril / 2020</option>
+              <option value="">15 / Marzo / 2020 - 31 / Marzo / 2020</option>
+              <option value="">01 / Marzo / 2020 - 15 / Marzo / 2020</option>
+            </select>
+            <input
+              type="submit"
+              id="btnconsultar"
+              name="btnconsultar"
+              value="Consultar"
+            />
+            <label>
+              ESTADO DE NOMINA DEL PERIODO SELECCIONADO
+              <input type="submit" name="status" id="status" value="Pagado" />
+            </label>
+          </div>
+        </div>
       </div>
     </div>
   </body>
