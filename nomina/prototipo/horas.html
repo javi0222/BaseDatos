@@ -25,14 +25,18 @@
       <div id="registro">
         <span id="tituloregistro">Registro de Horas</span>
         <div id="horas">
+          <label id="fecha">
+            <span>Fecha</span>
+            <input type="text" class="txtbuscar" value="21 / Abril / 2020" />
+          </label>
           <label>
             <span>Empelado ID</span>
-            <input type="text" id="txtbuscar" />
+            <input type="text" class="txtbuscar" />
           </label>
           <label>
             <span>Entrada</span>
             <input
-              id="hora"
+              class="hora"
               name="hora"
               type="text"
               list="listahora"
@@ -45,7 +49,36 @@
               <option value="11:00 AM"></option>
             </datalist>
             <input
-              id="minutos"
+              class="minutos"
+              name="minutos"
+              type="text"
+              list="listaminutos"
+              placeholder="Minutos"
+            />
+            <datalist id="listaminutos">
+              <option value="10 Minutos"></option>
+              <option value="20 Minutos"></option>
+              <option value="30 Minutos"></option>
+              <option value="40 Minutos"></option>
+            </datalist>
+          </label>
+          <label id="salida">
+            <span>Salida</span>
+            <input
+              class="hora"
+              name="hora"
+              type="text"
+              list="listahora"
+              placeholder="Hora"
+            />
+            <datalist id="listahora">
+              <option value="8:00 AM"></option>
+              <option value="9:00 AM"></option>
+              <option value="10:00 AM"></option>
+              <option value="11:00 AM"></option>
+            </datalist>
+            <input
+              class="minutos"
               name="minutos"
               type="text"
               list="listaminutos"
@@ -59,6 +92,10 @@
             </datalist>
           </label>
         </div>
+
+        <input type="submit" id="guardar" name="guardar" value="GUARDAR" />
+
+        <input type="submit" name="back" id="back" value="VOLVER ATRAS" />
       </div>
     </div>
   </body>
