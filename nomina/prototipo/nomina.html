@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./css/nomina.css" />
+    <title>Vista de Nomina</title>
+  </head>
+  <body>
+    <div id="contenedor">
+      <div id="sidebar">
+        <div id="userimg">
+          <img src="./imagenes/usuario.png" />
+        </div>
+        <div id="menu">
+          <ul>
+            <li class="menu"><a href="./empleado.html">Empelados</a></li>
+            <li class="menu">
+              <a href="./nomina.html" class="activo">Ver Nomina</a>
+            </li>
+            <li class="menu">
+              <a href="./horas.html">Registrar Horas</a>
+            </li>
+            <li class="menu">
+              <a href="./login.html" class="ultimo">Salir</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="lista">
+        <span id="titulotabla">Ver Nomina > Periodo actual</span>
+        <table>
+          <thead>
+            <th>Nombre</th>
+            <th>Horas Regulares</th>
+            <th>Horas Extras</th>
+            <th>Horas Totales</th>
+            <th>Retencion AFP</th>
+            <th>Retencione SFS</th>
+            <th>Retencione ISR</th>
+            <th>Sueldo Bruto</th>
+            <th>Sueldo Neto</th>
+          </thead>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+
+        <div id="periodo">
+          <span>Periodo</span>
+          <div>
+            <select>
+              <option value="">15 / Abril / 2020 - 30 / Abril / 2020</option>
+              <option value="">01 / Abril / 2020 - 15 / Abril / 2020</option>
+              <option value="">15 / Marzo / 2020 - 31 / Marzo / 2020</option>
+              <option value="">01 / Marzo / 2020 - 15 / Marzo / 2020</option>
+            </select>
+            <input
+              type="submit"
+              id="btnconsultar"
+              name="btnconsultar"
+              value="Consultar"
+            />
+            <label>
+              ESTADO DE NOMINA DEL PERIODO SELECCIONADO
+              <input type="submit" name="status" id="status" value="Pagado" />
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

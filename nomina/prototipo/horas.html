@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./css/horas.css" type="text/css" />
+    <title>Empleados</title>
+  </head>
+  <body>
+    <div id="notificacion">
+      Guradado exitosamente
+    </div>
+    <div id="contenedor">
+      <div id="sidebar">
+        <div id="userimg">
+          <img src="./imagenes/usuario.png" />
+        </div>
+        <div id="menu">
+          <ul>
+            <li class="menu"><a href="./empleado.html">Empelados</a></li>
+            <li class="menu"><a href="./nomina.html">Ver Nomina</a></li>
+            <li class="menu"><a href="#" class="activo">Registrar Horas</a></li>
+            <li class="menu">
+              <a href="./login.html" class="ultimo">Salir</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="registro">
+        <span id="tituloregistro">Registro de Horas</span>
+        <div id="horas">
+          <label id="fecha">
+            <span>Fecha</span>
+            <input type="text" class="txtbuscar" value="21 / Abril / 2020" />
+          </label>
+          <label>
+            <span>Empelado ID</span>
+            <input type="text" class="txtbuscar" />
+          </label>
+          <label>
+            <span>Entrada</span>
+            <input
+              class="hora"
+              name="hora"
+              type="text"
+              list="listahora"
+              placeholder="Hora"
+            />
+            <datalist id="listahora">
+              <option value="8:00 AM"></option>
+              <option value="9:00 AM"></option>
+              <option value="10:00 AM"></option>
+              <option value="11:00 AM"></option>
+            </datalist>
+            <input
+              class="minutos"
+              name="minutos"
+              type="text"
+              list="listaminutos"
+              placeholder="Minutos"
+            />
+            <datalist id="listaminutos">
+              <option value="10 Minutos"></option>
+              <option value="20 Minutos"></option>
+              <option value="30 Minutos"></option>
+              <option value="40 Minutos"></option>
+            </datalist>
+          </label>
+          <label id="salida">
+            <span>Salida</span>
+            <input
+              class="hora"
+              name="hora"
+              type="text"
+              list="listahora"
+              placeholder="Hora"
+            />
+            <datalist id="listahora">
+              <option value="8:00 AM"></option>
+              <option value="9:00 AM"></option>
+              <option value="10:00 AM"></option>
+              <option value="11:00 AM"></option>
+            </datalist>
+            <input
+              class="minutos"
+              name="minutos"
+              type="text"
+              list="listaminutos"
+              placeholder="Minutos"
+            />
+            <datalist id="listaminutos">
+              <option value="10 Minutos"></option>
+              <option value="20 Minutos"></option>
+              <option value="30 Minutos"></option>
+              <option value="40 Minutos"></option>
+            </datalist>
+          </label>
+        </div>
+
+        <input type="submit" id="guardar" name="guardar" value="GUARDAR" />
+
+        <!-- <input type="submit" name="back" id="back" value="VOLVER ATRAS" /> -->
+      </div>
+    </div>
+    <script type="text/javascript">
+      document.getElementById('guardar').addEventListener('click', (event) => {
+        const msg = document.getElementById('notificacion');
+        msg.style.display = 'block';
+
+        setTimeout(function () {
+          msg.style.display = 'none';
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>

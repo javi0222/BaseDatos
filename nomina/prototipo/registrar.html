@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./css/registrar.css" type="text/css" />
+    <title>Modificar Datos Empleados</title>
+  </head>
+  <body>
+    <div id="contenedor">
+      <div id="sidebar">
+        <div id="userimg">
+          <img src="./imagenes/usuario.png" />
+        </div>
+        <div id="menu">
+          <ul>
+            <li class="menu"><a href="./empleado.html" class="activo">Empelados</a></li>
+            <li class="menu"><a href="./nomina.html">Ver Nomina</a></li>
+            <li class="menu"><a href="horas.html">Registrar Horas</a></li>
+            <li class="menu">
+              <a href="./login.html" class="ultimo">Salir</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="registro">
+        <span id="tituloregistro">Empleado > Modificar Datos de Empleado</span>
+        <div id="horas">
+          <label id="nombre">
+            <span>Nombre</span>
+            <input type="text" class="texto" />
+          </label>
+          <label id="apellido">
+            <span>Apellido</span>
+            <input type="text" class="texto" />
+          </label>
+          <label>
+            <span>Estado Civil</span>
+            <select>
+              <option value="">Soltero</option>
+              <option value="">Casado</option>
+              <option value="">Viudo</option>
+              <option value="">Union Libre</option>
+            </select>
+          </label>
+          </label>
+          <label id="cedula">
+            <span>Cedula</span>
+            <input type="text" class="texto" />
+          </label>
+          <label id="edad">
+            <span>Edad</span>
+            <input type="text" class="texto" />
+          </label>
+          <label id="nss">
+            <span>Numero Seguridad Social</span>
+            <input type="text" class="texto" />
+          </label>
+          <div id="direccion">
+              <span class="header">Direccion:</span>
+                <label id="calle">
+                    <span>No. de casa/apartamento y Calle</span>
+                    <input type="text" class="texto" />
+                </label>
+                 <label id="sector">
+                    <span>Sector</span>
+                    <input type="text" class="texto" />
+                </label>
+                <label id="municipio">
+                    <span>Municipio</span>
+                    <input type="text" class="texto" />
+                </label>
+                <label id="provincia">
+                    <span>Provincia</span>
+                    <input type="text" class="texto" />
+                </label>
+          </div>
+         <label id="fecha">
+            <span>Fecha</span>
+            <input type="text" class="texto" value="21 / Abril / 2020" />
+          </label>
+          <label id="horario"><span>Horario de Trabajo:</span>
+              <select >
+              <option value="">8:00 AM - 4:00 PM</option>
+              <option value="">12:00 PM - 8:00 PM</option>
+            </select>
+          </label>
+          <label id="puesto"><span>Puesto de Empleo</span>
+              <select >
+              <option value="">Ventas</option>
+              <option value="">Caja</option>
+            </select>
+          </label>
+        </div>
+
+        <input type="submit" id="guardar" name="guardar" value="GUARDAR" />
+
+        <input type="submit" name="back" id="back" value="DESCARTAR" />
+      </div>
+    </div>
+    <script type="text/javascript">
+      document
+        .getElementById('guardar')
+        .addEventListener('click', volver);
+        
+        document
+        .getElementById('back')
+        .addEventListener('click', volver);
+        
+        function volver(event) {
+          document.location.href = './empleado.html';
+        }
+    </script>
+  </body>
+</html>
