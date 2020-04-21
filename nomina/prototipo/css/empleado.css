@@ -2,7 +2,7 @@ body {
   font-family: roboto, Arial, Helvetica, sans-serif;
 }
 #contenedor {
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   width: 937px;
   margin: 12px auto;
 }
@@ -79,6 +79,7 @@ thead {
   border-color: inherit;
   border-collapse: separate;
   font-size: 14px;
+  color: #464545;
 }
 tr {
   display: table-row;
@@ -113,8 +114,52 @@ tr:nth-child(2) {
   display: block;
   margin-bottom: 8px;
   font-size: 10pt;
+  color: #464545;
 }
 #lista {
   margin-top: 34px;
 }
 /* final de tabla */
+
+/* heading */
+#txtbuscar {
+  font-size: 10pt;
+  width: 153px;
+  height: 35px;
+  border-radius: 5px;
+  border: solid 1px #bcbcbc;
+  margin-right: 18px;
+  padding-left: 20px;
+}
+#btnbuscar {
+  /* padding-top: 15px; */
+  box-sizing: content-box;
+  height: 35px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: #2d98cd;
+  color: white;
+  font-size: 10pt;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+#registrar {
+  /* padding-top: 15px; */
+  box-sizing: content-box;
+  height: 35px;
+  width: 160px;
+  border-radius: 5px;
+  background-color: #2d98cd;
+  color: white;
+  font-size: 10pt;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
