@@ -18,20 +18,14 @@ El sistema de informacion que se esta desarrollando es un sisitema de nomina, nu
 
 ## Diagrama de Flujo de Datos (incluye nivel 0 y 1)
 
-**Diagrama de Contexto**
-
-![Diagrama de contexto](./imgs/diagrama_contexto.png)
-
-<br/>
-
 **Diagrama de Flujo de Datos nivel 0**
 
-![Diagrama de Flujo de Datos nivel 0](./imgs/Diagrama_DFD_nivel_0_v1.png)
+![Diagrama de Flujo de Datos nivel 0](./imgs/diagrama_contexto_nivel_0.png)
 
 <br/>
 
 **Diagrama de Flujo de Datos nivel 1**
-![Diagrama de Flujo de Datos nivel 0](./imgs/nivel_1/Diagrama_DFD_nivel_1_v1.png)
+![Diagrama de Flujo de Datos nivel 0](./imgs/Diagrama_DFD_nivel_1_v1.png)
 
 <br/>
 

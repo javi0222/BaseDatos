@@ -6,7 +6,7 @@ _Universidad Autonoma de Santo Domingo, Facultad de Ciencias, Departamento de In
 
 ## [1. Introducción](./informe/1_introduccion.md)
 
-## [2. Índice Temático]()
+## [2. Índice Temático](./informe/2_indice_tematico.md)
 
 ## [3. Descripción de la Empresa:](./informe/3_descripcion_empresa.md)<br/>
 
