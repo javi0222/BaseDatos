@@ -155,7 +155,7 @@ tr:nth-child(2) {
   /* padding-top: 15px; */
   box-sizing: content-box;
   height: 33px;
-  width: 100px;
+  width: 120px;
   border-radius: 5px;
   background-color: #ebebeb;
   color: 464545;
@@ -185,5 +185,5 @@ select {
   height: 35px;
 }
 #periodo label {
-  margin-left: 290px;
+  margin-left: 465px;
 }
