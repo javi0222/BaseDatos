@@ -20,88 +20,57 @@ El sistema de informacion que se esta desarrollando es un sisitema de nomina, nu
 
 **Diagrama de Flujo de Datos nivel 0**
 
-![Diagrama de Flujo de Datos nivel 0](./imgs/diagrama_contexto_nivel_0.png)
+![Diagrama de Flujo de Datos nivel 0](./imagenes/diagrama_contexto_nivel_0.png)
 
 <br/>
 
 **Diagrama de Flujo de Datos nivel 1**
-![Diagrama de Flujo de Datos nivel 0](./imgs/Diagrama_DFD_nivel_1_v1.png)
+![Diagrama de Flujo de Datos nivel 0](./imagenes/nivel_1/Diagrama_DFD_nivel_1_v2.png)
 
 <br/>
 
 ## Narrativa de los Procesos mostrados en el Diagrama de Flujo de Datos(DFD)
 
-`Proceso 1: Registrar informacion empleado`
+`Proceso 1: Registrar informacion de empleado`
 
-![Diagrama de Flujo de Datos nivel 1](./imgs/nivel_1/1.png)
+![Diagrama de Flujo de Datos nivel 1](./imagenes/nivel_1/1.png)
 
-Subproceso 1.1: Gregistro informacion <br/>
 Description: Tienen como tarea capturar toda la informacion del empleado, nombre, identificacion, fecha de ingreso a la compañia, el horario, el puesto a o area en la que desempeñara sus funciones, la cantidad de dinero que cobra por hora normal, y por hora extra, estado civil, direccion, numero de contacto entre otros. Y a la salida almacena dichos datos en el **Archivo maestro de empleado**.
 
 <br/>
 
 `Proceso 2: Registrar horas`
 
-![Diagrama de Flujo de Datos nivel 1](./imgs/nivel_1/2.png)
+![Diagrama de Flujo de Datos nivel 1](./imagenes/nivel_1/2.png)
 
-Subproceso 2.1: Calcular horas trabajadas <br/>
-Descripcion: Este se encarga de calcular las horas trabajadas en el dia, de acuerdo a la hora de entrada y a la hora de salida del empleado, esta informacion luego sera alimentada al subproceso 2.2.
-
-Subproceso 2.2: Registrar horas <br/>
-Description: Este toma las horas calculadas en el proceso anterior y las almacena en el Archivo de Horas por empleado.
+Descripcion: Este se encarga de calcular las horas trabajadas en el dia, de acuerdo a la hora de entrada y a la hora de salida del empleado, esta informacion luego sera almacenada en el Archivo de Horas por empleado.
 
 <br/>
 
 `Proceso 3: Calcular sueldo bruto`
 
-![Diagrama de Flujo de Datos nivel 1](./imgs/nivel_1/3.png)
+![Diagrama de Flujo de Datos nivel 1](./imagenes/nivel_1/3.png)
 
-Subproceso 3.1: Determinar horas extra y regulares <br/>
-Descripcion: Sealimenta de **D1** para obtener el registro de las horas registradas, tambien recibe informacion sobre el horario del empleado proveniente del proceso 3.2, de esta manera puede determinar cuantas horas son horas regulares y cuantas son horas extras, esta informacion sera enviad como "Reporte de horas" al subproceso 3.3.
-
-Subproceso 3.2: Extraer horario y precio por hora <br/>
-Descripcion: recibe informacion desde **D2** para obtener el horario el empleado que sera enviado al subproceso 3.1 y tambien enviar informacion sobre cuanto cobra el empleado por hora, ya sea regular o extra, esta otra informacion debe ser enviada al subproceso 3.3.
-
-Subproceso 3.3: Calcular montos <br/>
-Descripcion: Luego de obtener la informacion sobre cuantas horas son horas normales, cuantas son horas extras y el precio que debe pagarce por cada hora, este proceso procedera a calcular los montos a pagar por concepto de horas regulares y horas extras.
-
-Subproceso 3.4: Calcular sueldo bruto <br/>
-Descripcion: Este proceso ya solo tendria que sumar los montos a pagar por horas regulares y horas extras, y asi producir el sueldo o salario bruto. Esto no se realiza en el subproceso 3.3 debido a que quiero alimentar esa informacion por separado al **proceso 4**.
+Descripcion: Se alimenta de **D1** para obtener el registro de las horas trabajadas por el empleado, tambien recibe desde **D2** informacion sobre el horario del empleado y el precio o tarifa de las horas regulares y las horas extras, de esta manera puede determinar cuantas horas son horas regulares y cuantas son horas extras y tambien el monto a pagar por cada una respectivamente, luego suma ambos resultados para asi obtener el sueldo bruto.
 
 `Proceso 4: Calcular retenciones`
 
-![Diagrama de Flujo de Datos nivel 1](./imgs/nivel_1/4.png)
+![Diagrama de Flujo de Datos nivel 1](./imagenes/nivel_1/4.png)
 
-Subproceso 4.1: Procesar montos a pagar por horas <br/>
-Descripcion: Debido a que ciertas retenciones se calculan solo en base a las horas regulares, como el AFP y el SFS, y otras se calculan en base a horas regulares y horas extras, este proceso se encargar de los montos adecuados a los demas subprocesos.
-
-Subproceso 4.2: Calcular SFS <br/>
-Descripcion: Recibe el valor de la tasa de descuento del SFS desde **D3**, y el monto a pagar por horas regulares, con esta informacion calcula el monto a retener por concepto de Seguro Familiar de Salud.
-
-Subproceso 4.3: Calcular AFP <br/>
-Descripcion: Calcula el monto a retener para la Administradora de Fondos de Pensiones, con los valores provistos por el subproceso 4.1 y 4.2 y la informacion proveniente de **D3**.
-
-Subproceso 4.4: Calcular ISR <br/>
-Descripcion: Calcular el impuesto sobre la renta sobre el salario en bruto, el cual puede obtenerse a partir de los montos de horas regulares y horas extras, y la informacion sobre la tasa de contribucion proveniente de **D3**
-
-Subproceso 4.5: Cacular total retenciones <br/>
-Descripcion: conlos valores obtenidos de los subprocesos anteriores calcular el monto total de las retenciones a aplicar al sueldo del empleado.
+Descripcion: Se encarga de calular las retenciones de ley (AFP, SFS, IRS) en base al total a pagar por concepto horas regulares y horas extras.
 
 `Proceso 5: Calcular sueldo neto`
 
-![Diagrama de Flujo de Datos nivel 1](./imgs/nivel_1/5.png)
+![Diagrama de Flujo de Datos nivel 1](./imagenes/nivel_1/5.png)
 
-Subproceso 5.1: Calcular sueldo neto <br/>
-Descripcion: La tarea de este subproceso es la de tomar el sueldo bruto y las retenciones conrespondientes y determinar el sueldo neto.
+Descripcion: La tarea de este subproceso es la de tomar el sueldo bruto, las retenciones calculadas y algun otro descuento aplicada a algun empleado y con esta informacion determinar el sueldo neto a pagar.
 
 <br/>
 
 `Proceso 6: Desplegar informacion`
 
-![Diagrama de Flujo de Datos nivel 1](./imgs/nivel_1/6.png)
+![Diagrama de Flujo de Datos nivel 1](./imagenes/nivel_1/6.png)
 
-Subproceso 6.1: Registrar informacion <br/>
-Descripcion: Consolidar la informacion sobre sueldo neto, suueldo bruto y retenciones. Registrar esta informacion en el registro del empleado y generar un informe que sera enviado al subproceso 6.2.
+Descripcion: Consolidar la informacion sobre sueldo neto, suueldo bruto, retenciones y descuentons, mostrar dicha informacion al usuario y registrarla en nuestra base de datos.
 
-Subproceso 6.2: Desplegar informacion <br/>
-Descripcion: Muestra un informe sobre el pago a realizar al empleado.
+[Go back](../README.md)
