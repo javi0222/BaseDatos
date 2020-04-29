@@ -1,1 +1,182 @@
-<h1>Nomina</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./css/conf_nomina.css" type="text/css" />
+    <title>Empleados</title>
+  </head>
+  <body>
+    <div id="notificacion">
+      Guradado exitosamente
+    </div>
+    <div id="contenedor">
+      <div id="sidebar">
+        <div id="userimg">
+          <img src="./imagenes/usuario.png" />
+        </div>
+        <div id="menu">
+          <ul>
+            <li class="menu"><a href="./empleado.html">Empelados</a></li>
+            <li class="menu"><a href="./nomina.html">Ver Nomina</a></li>
+            <li class="menu"><a href="./horas.html">Registrar Horas</a></li>
+            <li class="menu">
+              <a href="./configuracion.html" class="activo">Configuracion</a>
+            </li>
+            <li class="menu">
+              <a href="./login.html" class="ultimo">Salir</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="registro">
+        <span id="tituloregistro">Configuracion > Modificar Nomina</span>
+        <div class="box">
+          <label id="fecha">
+            <span>Nomina</span>
+            <!-- <input type="text" class="txtbuscar" value="21 / Abril / 2020" /> -->
+            <select name="nomina" class="txtbuscar" id="">
+              <option value="">Empleados</option>
+              <option value="">Administracion</option>
+            </select>
+          </label>
+          <label>
+            <span>Periodo de Nomina</span>
+            <select name="nomina" class="txtbuscar" id="">
+              <option value="">Quincenal</option>
+              <option value="">Mensual</option>
+            </select>
+          </label>
+          <label for="">
+            <input
+              type="submit"
+              class="guardar"
+              name="guardar"
+              value="Guardar"
+            />
+          </label>
+          <label for="">
+            <input
+              type="submit"
+              name="back"
+              class="back"
+              value="Eliminar Nomina"
+            />
+          </label>
+        </div>
+        <span id="tituloregistro">Configuracion > Crear Nomina</span>
+        <div class="box" id="crear">
+          <label id="fecha">
+            <span>Nombre</span>
+            <input type="text" class="txtbuscar" value="" id="nombre" />
+          </label>
+          <label>
+            <span>Periodo de Nomina</span>
+            <select name="nomina" class="txtbuscar">
+              <option value="">Quincenal</option>
+              <option value="">Mensual</option>
+            </select>
+          </label>
+          <label id="diapago">
+            <span>Dia de Pago</span>
+            <select name="nomina" class="txtbuscar" id="">
+              <option value="">15 de cada mes</option>
+              <option value="">30 de cada mes</option>
+            </select>
+          </label>
+          <!-- <br /> -->
+          <label for="">
+            <input
+              id="btnguardar"
+              type="submit"
+              class="guardar btn"
+              name="guardar"
+              value="Guardar"
+            />
+          </label>
+          <label for="">
+            <input
+              id="back"
+              type="submit"
+              name="back"
+              class="back btn"
+              value="Eliminar Nomina"
+            />
+          </label>
+        </div>
+        <!-- <label>
+            <span>Entrada</span>
+            <input
+              class="hora"
+              name="hora"
+              type="text"
+              list="listahora"
+              placeholder="Hora"
+            />
+            <datalist id="listahora">
+              <option value="8:00 AM"></option>
+              <option value="9:00 AM"></option>
+              <option value="10:00 AM"></option>
+              <option value="11:00 AM"></option>
+            </datalist>
+            <input
+              class="minutos"
+              name="minutos"
+              type="text"
+              list="listaminutos"
+              placeholder="Minutos"
+            />
+            <datalist id="listaminutos">
+              <option value="10 Minutos"></option>
+              <option value="20 Minutos"></option>
+              <option value="30 Minutos"></option>
+              <option value="40 Minutos"></option>
+            </datalist>
+          </label>
+          <label id="salida">
+            <span>Salida</span>
+            <input
+              class="hora"
+              name="hora"
+              type="text"
+              list="listahorasalida"
+              placeholder="Hora"
+            />
+            <datalist id="listahorasalida">
+              <option value="12:00 PM"></option>
+              <option value="01:00 PM"></option>
+              <option value="02:00 PM"></option>
+              <option value="03:00 PM"></option>
+            </datalist>
+            <input
+              class="minutos"
+              name="minutos"
+              type="text"
+              list="listaminutos"
+              placeholder="Minutos"
+            />
+            <datalist id="listaminutos">
+              <option value="10 Minutos"></option>
+              <option value="20 Minutos"></option>
+              <option value="30 Minutos"></option>
+              <option value="40 Minutos"></option>
+            </datalist>
+          </label> -->
+        <!-- </div> -->
+
+        <!-- <input type="submit" id="guardar" name="guardar" value="GUARDAR" /> -->
+
+        <!-- <input type="submit" name="back" id="back" value="VOLVER ATRAS" /> -->
+      </div>
+    </div>
+    <script type="text/javascript">
+      document.getElementById('guardar').addEventListener('click', (event) => {
+        const msg = document.getElementById('notificacion');
+        msg.style.display = 'block';
+
+        setTimeout(function () {
+          msg.style.display = 'none';
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>

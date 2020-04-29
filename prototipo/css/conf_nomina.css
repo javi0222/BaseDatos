@@ -3,7 +3,7 @@ body {
 }
 #contenedor {
   /* outline: 1px solid red; */
-  width: 1037px;
+  width: 1045px;
   margin: 12px auto;
 }
 /* sidebar */
@@ -55,88 +55,77 @@ body {
   border-bottom-right-radius: 5px;
 }
 /* final sidebar */
-/* main data */
-#data {
+
+#registro {
   top: 0;
   float: right;
   /* outline: 1px solid green; */
-  width: 785px;
+  width: 793px;
 }
-
-/* tabla */
-table {
-  line-height: 40px;
-  width: 685px;
-  border: 1px solid #bcbcbc;
-  border-collapse: separate;
-  border-left: 0;
-  border-radius: 5px;
-  border-spacing: 0px;
-}
-thead {
-  background-color: #dadada;
-  display: table-header-group;
-  vertical-align: middle;
-  border-color: inherit;
-  border-collapse: separate;
-  font-size: 14px;
-  color: #464545;
-}
-tr {
-  display: table-row;
-  vertical-align: inherit;
-  border-color: inherit;
-}
-th,
-td {
-  height: 40px;
-  padding: 5px 4px 6px 4px;
-  text-align: left;
-  vertical-align: top;
-  border-left: 1px solid #bcbcbc;
-  padding-left: 10px;
-}
-td {
-  border-top: 1px solid #bcbcbc;
-}
-thead:first-child tr:first-child th:first-child,
-tbody:first-child tr:first-child td:first-child {
-  border-radius: 5px 0 0 0;
-}
-thead:last-child tr:last-child th:first-child,
-tbody:last-child tr:last-child td:first-child {
-  border-radius: 0 0 0 5px;
-}
-
-tr:nth-child(2) {
-  background-color: #efefef;
-}
-.lista span {
+#tituloregistro {
   display: block;
+  font-size: 10pt;
   margin-bottom: 14px;
-  font-size: 10pt;
-  color: #464545;
 }
-.lista {
-  margin-top: 0;
+.box {
+  padding-top: 20px;
+  height: 122px;
+  background-color: #f2f2f2;
+  border: solid 1px #d0d0d0;
+  border-radius: 5px;
+  margin-bottom: 40px;
 }
-/* final de tabla */
 
-/* heading */
-#txtbuscar {
+.txtbuscar {
   font-size: 10pt;
-  width: 153px;
-  height: 35px;
+  width: 110px;
+  height: 30px;
   border-radius: 5px;
   border: solid 1px #bcbcbc;
   margin-right: 18px;
   padding-left: 20px;
 }
-#btnbuscar {
+label {
+  float: left;
+  font-size: 10pt;
+  margin-right: 20px;
+  margin-top: 28px;
+}
+input {
+  margin-top: 8px;
+}
+label span {
+  display: block;
+}
+.hora {
+  width: 60px;
+}
+
+.minutos {
+  width: 70px;
+  margin-left: 5px;
+}
+.hora .minutos {
+  height: 28px;
+  border: solid 1px #bcbcbc;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+#salida {
+  margin-right: 0px;
+  margin-left: 18px;
+}
+#fecha {
+  margin-left: 40px;
+}
+/* heading */
+
+.guardar {
   /* padding-top: 15px; */
+  /* float: right; */
   box-sizing: content-box;
-  height: 35px;
-  width: 170px;
+  height: 32px;
+  width: 150px;
   border-radius: 5px;
   background-color: #2d98cd;
   color: white;
@@ -144,54 +133,70 @@ tr:nth-child(2) {
   font-weight: 500;
   padding: 0;
   margin: 0;
-  margin-top: 25px;
-  margin-right: 34px;
 }
-#registrar {
+.back {
   /* padding-top: 15px; */
-
   box-sizing: content-box;
-  height: 35px;
-  width: 200px;
+  height: 32px;
+  width: 150px;
   border-radius: 5px;
-  background-color: #efefef;
-  color: #9c9c9c;
+  background-color: #ebebeb;
+  color: 464545;
   font-size: 10pt;
   font-weight: 500;
   padding: 0;
   margin: 0;
-  margin-top: 25px;
   /* float: right; */
-  margin-bottom: 50px;
+  border: 1px solid #b8b8b8;
+  margin-left: 38px;
+}
+.guardar,
+.back {
+  margin-top: 19px;
+  cursor: pointer;
 }
 input:focus,
 textarea:focus,
 select:focus {
   outline: none;
 }
-td {
-  font-size: 10pt;
-}
-td:last-child {
-  color: gray;
-  padding-right: 10px;
+
+#notificacion {
+  position: absolute;
+  background-color: #2d98cd;
+  color: white;
+  width: 280px;
+  height: 50px;
+  border-radius: 5px;
+  line-height: 50px;
   text-align: center;
+  left: 50%;
+  display: none;
 }
-td:first-child {
-  padding-right: 20px;
-  width: 100px;
+
+select {
+  background-color: white;
+  margin-top: 6px;
+  /* height: 35px; */
 }
-td:nth-child(2) {
-  width: 300px;
+#nombre {
+  margin-top: 5px;
+  height: 27px;
 }
-#otrosDescuentos td:nth-child(2) {
-  width: 250px;
+#diapago {
+  margin-right: 200px;
 }
-#otrosDescuentos td:nth-child(3) {
-  width: 80px;
+#crear {
+  height: 160px;
 }
-#titulotabla {
-  font-size: 10pt;
-  margin-bottom: 15px;
-  display: block;
+#crear .btn {
+  margin-top: -5px;
+  /* margin-left: 38px; */
+}
+#btnguardar {
+  margin-left: 38px;
+  /* margin-right: -10; */
+}
+#crear #back {
+  margin-left: 20px;
 }
