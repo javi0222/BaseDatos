@@ -3,7 +3,7 @@ body {
 }
 #contenedor {
   /* outline: 1px solid red; */
-  width: 937px;
+  width: 1037px;
   margin: 12px auto;
 }
 /* sidebar */
@@ -60,7 +60,7 @@ body {
   top: 0;
   float: right;
   /* outline: 1px solid green; */
-  width: 685px;
+  width: 785px;
 }
 
 /* tabla */
@@ -111,13 +111,13 @@ tbody:last-child tr:last-child td:first-child {
 tr:nth-child(2) {
   background-color: #efefef;
 }
-#lista span {
+.lista span {
   display: block;
   margin-bottom: 14px;
   font-size: 10pt;
   color: #464545;
 }
-#lista {
+.lista {
   margin-top: 0;
 }
 /* final de tabla */
@@ -162,18 +162,20 @@ tr:nth-child(2) {
   margin: 0;
   margin-top: 25px;
   /* float: right; */
+  margin-bottom: 50px;
 }
 input:focus,
 textarea:focus,
 select:focus {
   outline: none;
 }
-
+td {
+  font-size: 10pt;
+}
 td:last-child {
   color: gray;
   padding-right: 10px;
   text-align: center;
-  font-size: 10pt;
 }
 td:first-child {
   padding-right: 20px;
@@ -181,4 +183,10 @@ td:first-child {
 }
 td:nth-child(2) {
   width: 300px;
+}
+#otrosDescuentos td:nth-child(2) {
+  width: 250px;
+}
+#otrosDescuentos td:nth-child(3) {
+  width: 80px;
 }
