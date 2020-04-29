@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./css/configuracion.css" type="text/css" />
+    <title>Configuracion de Nomina</title>
+  </head>
+  <body>
+    <div id="contenedor">
+      <div id="sidebar">
+        <div id="userimg">
+          <img src="./imagenes/usuario.png" />
+        </div>
+        <div id="menu">
+          <ul>
+            <li class="menu"><a href="./empleado.html">Empelados</a></li>
+            <li class="menu"><a href="./nomina.html">Ver Nomina</a></li>
+            <li class="menu"><a href="./horas.html">Registrar Horas</a></li>
+            <li class="menu">
+              <a href="#" class="activo">Configuracion</a>
+            </li>
+            <li class="menu">
+              <a href="./login.html" class="ultimo">Salir</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="registro">
+        <span id="tituloregistro">Configuraciones</span>
+
+        <input
+          class="btn"
+          type="submit"
+          id="nomina"
+          name="nomina"
+          value="NOMINA"
+        />
+        <input
+          class="btn"
+          type="submit"
+          id="retenciones"
+          name="retenciones"
+          value="RETENCIONES Y DESCUENTOS"
+        />
+        <input
+          class="btn"
+          type="submit"
+          id="usuarios"
+          name="usuarios"
+          value="USUARIOS"
+        />
+        <input
+          class="btn"
+          type="submit"
+          id="puesto"
+          name="puesto"
+          value="PUESTOS DE TRABAJO"
+        />
+
+        <!-- <input type="submit" name="back" id="back" value="VOLVER ATRAS" /> -->
+      </div>
+    </div>
+    <script type="text/javascript">
+      function direccionar(btn, ruta) {
+        document
+          .getElementById(btn)
+          .addEventListener('click', function (event) {
+            event.preventDefault();
+            document.location.href = ruta;
+          });
+      }
+
+      direccionar('nomina', './configuracion_nomina.html');
+      direccionar('retenciones', './configuracion_retenciones.html');
+      direccionar('usuarios', './configuracion_usuarios.html');
+      direccionar('puesto', './configuracion_puesto.html');
+    </script>
+  </body>
+</html>
