@@ -190,3 +190,8 @@ td:nth-child(2) {
 #otrosDescuentos td:nth-child(3) {
   width: 80px;
 }
+#titulotabla {
+  font-size: 10pt;
+  margin-bottom: 15px;
+  display: block;
+}

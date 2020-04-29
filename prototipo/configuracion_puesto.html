@@ -1,1 +1,76 @@
-<h1>Puesto</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./css/conf_nomina.css" type="text/css" />
+    <title>Configuracion</title>
+  </head>
+  <body>
+    <div id="contenedor">
+      <div id="sidebar">
+        <div id="userimg">
+          <img src="./imagenes/usuario.png" />
+        </div>
+        <div id="menu">
+          <ul>
+            <li class="menu"><a href="./empleado.html">Empelados</a></li>
+            <li class="menu"><a href="./nomina.html">Ver Nomina</a></li>
+            <li class="menu"><a href="./horas.html">Registrar Horas</a></li>
+            <li class="menu">
+              <a href="./configuracion.html" class="activo">Configuracion</a>
+            </li>
+            <li class="menu">
+              <a href="./login.html" class="ultimo">Salir</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="data">
+        <div class="lista">
+          <span id="titulotabla"
+            ><strong>Configuracion > Puestos de Trabajo</strong></span
+          >
+          <table>
+            <thead>
+              <th>Puesto</th>
+              <th>Descripcion</th>
+              <th>Tarifa por Hora</th>
+              <th></th>
+            </thead>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td></td>
+              <td></td>
+              <td>Editar</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td></td>
+              <td></td>
+              <td>Editar</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td></td>
+              <td></td>
+              <td>Editar</td>
+            </tr>
+          </table>
+        </div>
+
+        <input
+          type="submit"
+          id="btnbuscar"
+          name="btnbuscar"
+          value="Agregar Puesto"
+        />
+        <input
+          type="submit"
+          name="registrar"
+          id="registrar"
+          value="Eliminar seleccionado"
+        />
+      </div>
+    </div>
+  </body>
+</html>
